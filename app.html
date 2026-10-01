@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PetCare — Dashboard</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body class="app-body">
+
+  <!-- ===== SIDEBAR (desktop) ===== -->
+  <aside class="sidebar">
+    <a href="index.html" class="logo sidebar-logo">
+      <span class="logo-mark">🐾</span>
+      <span>PetCare</span>
+    </a>
+
+    <nav class="side-nav" aria-label="Main navigation">
+      <button class="side-link active" data-view="dashboard">
+        <span class="side-ico">🏠</span> Dashboard
+      </button>
+      <button class="side-link" data-view="pets">
+        <span class="side-ico">🐾</span> My pets
+      </button>
+      <button class="side-link" data-view="health">
+        <span class="side-ico">💉</span> Health
+      </button>
+      <button class="side-link" data-view="appointments">
+        <span class="side-ico">🩺</span> Appointments
+      </button>
+      <button class="side-link" data-view="weight">
+        <span class="side-ico">⚖️</span> Weight
+      </button>
+      <button class="side-link" data-view="reminders">
+        <span class="side-ico">🔔</span> Reminders
+      </button>
+    </nav>
+
+    <div class="side-footer">
+      <div class="side-user">
+        <div class="side-avatar">Y</div>
+        <div>
+          <strong>Yasmine</strong>
+          <span>Personal account</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== MAIN ===== -->
+  <main class="main">
+
+    <!-- Mobile header -->
+    <header class="mobile-header">
+      <a href="index.html" class="logo">
+        <span class="logo-mark">🐾</span>
+        <span>PetCare</span>
+      </a>
+      <button class="icon-btn" aria-label="Notifications">
+        <span class="notif-dot"></span>
+        🔔
+      </button>
+    </header>
+
+    <!-- ==== VIEWS ==== -->
+    <section id="view-dashboard" class="view"></section>
+    <section id="view-pets" class="view hidden"></section>
+    <section id="view-health" class="view hidden"></section>
+    <section id="view-appointments" class="view hidden"></section>
+    <section id="view-weight" class="view hidden"></section>
+    <section id="view-reminders" class="view hidden"></section>
+
+  </main>
+
+  <!-- ===== BOTTOM NAV (mobile) ===== -->
+  <nav class="bottom-nav" aria-label="Mobile navigation">
+    <button class="bn-link active" data-view="dashboard">
+      <span>🏠</span><small>Home</small>
+    </button>
+    <button class="bn-link" data-view="pets">
+      <span>🐾</span><small>Pets</small>
+    </button>
+    <button class="bn-link" data-view="health">
+      <span>💉</span><small>Health</small>
+    </button>
+    <button class="bn-link" data-view="appointments">
+      <span>🩺</span><small>Visits</small>
+    </button>
+    <button class="bn-link" data-view="reminders">
+      <span>🔔</span><small>Reminders</small>
+    </button>
+  </nav>
+
+  <script src="js/storage.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
